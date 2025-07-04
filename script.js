@@ -9,6 +9,7 @@ var pictureX = 10;
 var pictureY = 10;
 var pictureWidth = 150;
 var pictureHeight = 200; 
+var shreksClicked = 0;
 
 function createImages(path){
     var img = new Image();
@@ -40,15 +41,19 @@ window.addEventListener('click', (e) => {
         ranImage = Math.floor(Math.random() * images.length);
         pictureX = Math.floor(Math.random() * (CANVAS_WIDTH - 150));
         pictureY = Math.floor(Math.random() * (CANVAS_HEIGHT - 200));
+        shreksClicked++;
     }
     
 });
 
 var ranImage = Math.floor(Math.random() * images.length);
 
+ctx.font = '80px MedievalSharp';
+ctx.fillStyle = '#228B22';
 function animate(){   
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
     ctx.drawImage(shreksSwamp, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+    ctx.fillText('Shreks Clicked: ' + shreksClicked, CANVAS_WIDTH/2 - 300, 100);
     ctx.drawImage(images[ranImage], pictureX, pictureY, pictureWidth, pictureHeight);
     requestAnimationFrame(animate);
 }
