@@ -37,7 +37,7 @@ var mouse = {
 window.addEventListener('click', (e) => {
     mouse.x = e.x;
     mouse.y = e.y;
-    if(mouse.x <= pictureX + 150 || mouse.y <= pictureY + 200){
+    if((mouse.x <= pictureX + 150 && mouse.x > pictureX) || (mouse.y <= pictureY + 200 && mouse.y > pictureY)){
         ranImage = Math.floor(Math.random() * images.length);
         pictureX = Math.floor(Math.random() * (CANVAS_WIDTH - 150));
         pictureY = Math.floor(Math.random() * (CANVAS_HEIGHT - 200));
