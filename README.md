@@ -1,6 +1,5 @@
 # Shrek Clicker
 
----
 
 Welcome to **Shrek Clicker** — the game where you try and cclick on shrek.
 
