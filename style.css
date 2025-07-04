@@ -1,0 +1,12 @@
+#canvas1{
+    background-color: blanchedalmond;
+    border: 5px solid black;
+    position: absolute;
+    transform: translate(-50%, -50%,); 
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: black;
+}
