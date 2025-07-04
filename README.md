@@ -27,3 +27,7 @@ A simple, delightful canvas-based game that throws Shrek at you in random spots 
 ## Why?
 
 Because sometimes the best therapy is clicking on an animated ogre and watching him run away.
+
+## known bugs
+
+The only bug is that some of the images are quite large so you dont always have to click right on shrek, but my flight is about to take off. 
